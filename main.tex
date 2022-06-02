@@ -1,0 +1,133 @@
+% !TEX encode = UTF-8
+% !TEX program = xelatex
+% \documentclass[answer]{THUExam}
+
+
+% =================================================
+%       用来生成A3卷子的代码
+% =================================================
+% \documentclass[a3paper]{article}
+% \usepackage{geometry}
+% \usepackage{pdfpages}
+% \geometry{
+% 	layout = a3paper,
+% 	landscape,
+% 	a3paper
+% }
+% \begin{document}
+% \includepdf[pages=-,nup=2x1]{THUExam-demo}
+% \end{document}
+
+
+
+\PassOptionsToPackage{quiet}{xeCJK}
+\documentclass[answer]{THUExam}
+% \documentclass[]{THUExam}
+\usepackage{HTNotes-math}
+\usepackage{pifont}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc, shapes.geometric, shapes, shapes.multipart, arrows.meta, arrows, decorations.markings, external, trees}
+
+% =================================================
+%       PDF信息
+% =================================================
+% PDF信息里的标题栏
+\title{清华大学 2021–2022 学年 秋季学期 离散数学 1 }
+% PDF信息里的作者栏
+\author{杨维铠}
+% PDF信息里的主题
+\Subject{Exam}
+% PDF信息里的关键词
+\Keywords{离散数学}
+
+% =================================================
+%       试卷头信息
+% =================================================
+% 试卷头里的年份
+\Year{2021--2022}
+% 试卷头里的学期
+\Semester{秋季}
+% 试卷头里的课程
+\Course{离散数学1}
+% 考试时间
+\Time{2022年1月8日14:30-16:30}
+% 试卷头里的类型，如A/B/模拟等
+\Type{A}
+
+\begin{document}
+\vspace{1cm}
+% 生成试卷表头
+\makehead
+
+\vspace{1cm}
+
+\makepart{单选题}{每小题~2~分，共~4~分}在下列各小题中选择其中\fbox{一个答案}，标注在题目中的括号内. 
+
+
+\begin{problem}
+本题答案为A\pickout{A}
+\options
+{选项A}
+{选项B}
+{选项C}
+{选项D}
+\end{problem}
+
+\begin{problem}
+本题答案为C\pickout{C}
+\options
+{一个比较短的选项A}
+{一个比较短的选项B}
+{一个比较长长长长长长长长长长的选项C}
+{一个比较短的选项D}
+\end{problem}
+
+\begin{problem}
+本题答案为D\pickout{D}
+\options
+{一个非常长长长长长长长长长长长长长长的选项A}
+{一个非常长长长长长长长长长长长长长长的选项B}
+{一个非常长长长长长长长长长长长长长长的选项C}
+{一个非常长长长长长长长长长长长长长长的选项D}
+\end{problem}
+
+\vspace{2cm}
+
+\makepart{判断题}{每小题~1~分，共~2~分}在题目中的括号内标出\ding{51}或\ding{55}.
+
+\begin{problem}
+该命题为真命题.\pickout{\ding{55}}
+\end{problem}
+
+\begin{problem}
+该命题为假命题.\pickout{\ding{51}}
+\end{problem}
+
+\makepart{填空题}{每小题~2~分，共~2~分}.
+
+\begin{problem}
+正多面体一共有\fillin{$\quad 5\quad $}种.
+\end{problem}
+
+\newpage
+\makepart{解答题}{共~4~分}题目说明为\fbox{画出}或\fbox{写出}的，只用写答案，不用写过程.
+
+\begin{problem}
+（4分）证明一个代数结构是群需要证明那些性质
+\end{problem}
+\bigskip
+\begin{solution}
+\begin{itemize}
+    \item 封闭性\dotfill 1分
+    \item 结合律\dotfill 2分
+    \item 有幺元\dotfill 3分
+    \item 有逆元\dotfill 4分
+\end{itemize}
+\end{solution}
+\begin{note}
+\begin{itemize}
+    \item 每漏一条扣一分. 
+\end{itemize}
+\end{note}
+\end{document}
